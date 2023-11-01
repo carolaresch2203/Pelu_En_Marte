@@ -15,11 +15,43 @@
         <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="misiones.html">Misiones</a></li>
-              <li><a href="audiovisuales.html">Galeria Pelulovers</a></li>
               <li><a class="active" href="contacto.html">Contacto</a></li>
             </ul>
           </nav>
     </header>
+
+    <h2 style="margin: 15px"><b>Si te gusto el blog dejame tu feedback!!</b></h2>
+
+    <div class="contenedor-formulario">
+      <form name="contact" netlify>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+        <label for="mail">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu mail" required>
+        <label for="pais">Pais: </label>
+        <select name="pais" id="pais">
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Peru">Peru</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="España">España</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Ecuador">Ecuador</option>
+        </select>
+        <label for="comentario">Comentario: </label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dame tu feedback: "></textarea>
+
+        <label for="like">Te gusto el blog? </label>
+        <input type="radio" id="mucho" name="like"><i>Soy Fan de Pelu </i>
+        <input type="radio" id="poco" name="like"><i>Un poco</i>
+        <input type="radio" id="nada" name="like"><i>Nada, Pelu es un engreido</i>
+
+        <input type="submit" value="Enviar">
+      </form>
+      
+    </div>
 </body>
 </html>
